@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>..</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCI--1e92K4Zh-xq6HyKupUB902FnLgcGU",
+        authDomain: "realtime-comment-system-c7ba0.firebaseapp.com",
+        databaseURL:
+          "https://realtime-comment-system-c7ba0-default-rtdb.firebaseio.com",
+        projectId: "realtime-comment-system-c7ba0",
+        storageBucket: "realtime-comment-system-c7ba0.appspot.com",
+        messagingSenderId: "377043650710",
+        appId: "1:377043650710:web:3eeb3b8507655c49129ab7",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+
+  <body>
+    <h1 >Comments</h1>
+
+    <div class="userInput">
+      Name: <input type="text" id="name" value="" /> Comment:
+      <textarea id="comment" rows = "4" cols = "60" name = "description">
+     </textarea><br>
+      <button class="btn" onclick="myFunction()">Submit</button>
+    </div>
+
+    <p id="username"></p>
+    <p id="data"></p>
+    <script src="app.js"></script>
+  </body>
+</html>
